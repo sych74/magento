@@ -54,7 +54,8 @@ resp.nodes.push({
   displayName: "Elasticsearch",
   env: {
     ES_JAVA_OPTS: "-Xms512m -Xmx512m",
-    ELASTIC_PASSWORD: "${globals.ES_PASS}"
+    ELASTIC_PASSWORD: "${globals.ES_PASS}",
+    JELASTIC_EXPOSE: "9200"
   },
   volumes: [
     "/usr/share/elasticsearch/config/"
