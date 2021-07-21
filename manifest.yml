@@ -148,7 +148,14 @@ onInstall:
       systemctl stop firewalld;
       systemctl disable firewalld;
   - restartContainers [elasticsearch]
-  
+  - api: env.control.AddEndpoint
+    nodeId: ${nodes.elasticsearch.master.id}
+    privatePort: 9200
+    protocol: TCP
+    name: Elasticsearch
+  - setGlobals: 
+      ES_PORT: ${response.object.publicPort}
+
   - installMagento
   
   - initLEwebroot
