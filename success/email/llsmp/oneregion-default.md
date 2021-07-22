@@ -12,12 +12,6 @@ Use the following credentials to access the LiteSpeed WEB Server admin console:
 **Login**: admin  
 **Password**: ${globals.LS_ADMIN_PASS}  
 
-Use the following credentials to access the Elasticsearch admin panel:
-
-**Admin Panel**: [http://docker${nodes.elasticsearch.master.id}-${env.domain}:${globals.ES_PORT}](http://docker${nodes.elasticsearch.master.id}-${env.domain}:${globals.ES_PORT})  
-**Username**: elastic  
-**Password**: ${globals.ES_PASS}  
-
 Manage the database nodes using the next credentials:
 
 **phpMyAdmin Panel**: [https://${env.domain}:8443/](https://${env.domain}:8443/)  
