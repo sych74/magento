@@ -77,7 +77,7 @@ mixins:
 
 globals:
   cdnUrl: https://cdn.jsdelivr.net/gh
-  MG_SCRIPTS_PATH: https://cdn.jsdelivr.net/gh/jelastic-jps/magento-cluster@2.2.0/scripts
+  MG_SCRIPTS_PATH: https://raw.githubusercontent.com/sych74/magento-cluster/JE-75459/scripts
   DB_USER: ${settings.DB_USER:user-[fn.random]}
   DB_PASS: ${settings.DB_PASS:[fn.password(10)]}
   DB_HOST: sqldb
